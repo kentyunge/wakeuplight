@@ -8,7 +8,7 @@ int onboard = D7;       // Onboard Blue LED - We'll turn off during the day and 
 
 // State variables
 bool isNight = true;
-int checkDelay = 5 * 1000; // 1 minute
+int checkDelay = 5 * 1000; // Check every 5 seconds
 
 void setup() {
     // Initialize Outputs
@@ -49,6 +49,6 @@ void loop() {
         digitalWrite(yellow2, HIGH);
     }
     
-    // Wait 1 min...
+    // Wait 5 sec...
     delay(checkDelay);
 }
